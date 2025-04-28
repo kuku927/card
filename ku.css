@@ -82,7 +82,6 @@ body {
   /* 加個陰影，看起來立體，可選 */
   margin-bottom: 0.5rem;
   /* 加這行，讓icon跟文字有距離 */
-
 }
 
 .content-wrapper {
@@ -116,11 +115,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.card-img-top {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
 .title-text {
   color: #3d687a;
   font-family: 'title', sans-serif;
@@ -133,4 +127,17 @@ body {
 }
 .btn:hover {
   background-color: rgba(148, 157, 161, 1); /* 滑過去時的顏色，這邊自己決定！ */
+}
+
+.img {
+  width: 120px;
+  /* 可以根據需要調整尺寸 */
+  height: 120px;
+  object-fit: cover;
+  /* 保持圖片不變形 */
+  border-radius: 10%;
+  /* 讓圖片變成圓形 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 加個陰影，看起來立體，可選 */
+  margin: 6px;
 }
