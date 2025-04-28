@@ -1,0 +1,136 @@
+body {
+  background-image: url('pic/bg01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 字體1 */
+@font-face {
+  font-family: 'font';
+  src: url('fonts/GENSENROUNDED-M.TTC') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* icon字體 */
+@font-face {
+  font-family: 'icon';
+  src: url('fonts/SENOBI-GOTHIC-BOLD.TTF') format('truetype');
+}
+
+/* 表題字體 */
+@font-face {
+  font-family: 'title';
+  src: url('fonts/SHIPPORIMINCHOB1-OTF-BOLD.OTF') format('truetype');
+}
+
+/* 淡入動畫 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    /* 從稍微往下浮上來 */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('pic/bg01-mobile.jpg');
+    /* 換成特別為手機準備的版本 */
+    background-position: center top;
+    /* 也可以微調位置 */
+  }
+}
+
+
+/* 套在 icon 區塊 */
+.text-center {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.icon-text {
+  font-family: 'icon', sans-serif;
+  color: #B1534D;
+}
+
+/* 全站套用 */
+body {
+  font-family: 'font', sans-serif;
+}
+
+
+.icon {
+  width: 150px;
+  /* 可以根據需要調整尺寸 */
+  height: 150px;
+  object-fit: cover;
+  /* 保持圖片不變形 */
+  border-radius: 50%;
+  /* 讓圖片變成圓形 */
+  border: 4px solid rgb(177, 83, 77);
+  /* 可加上白色邊框，看起來更漂亮，可選 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 加個陰影，看起來立體，可選 */
+  margin-bottom: 0.5rem;
+  /* 加這行，讓icon跟文字有距離 */
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  gap: 1.5rem;
+}
+
+
+.custom-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.75);
+  /* 半透明白底 */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.03);
+}
+
+.card-text {
+  color: #37525e;
+  margin-bottom: 0.75rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.title-text {
+  color: #3d687a;
+  font-family: 'title', sans-serif;
+}
+
+.btn {
+  background-color: rgba(148, 157, 161, 0.5);
+  border: none; /* 可選，看要不要取消按鈕的外框線 */
+  opacity: 1;   /* 保持按鈕本身完整，只有背景透明 */
+}
+.btn:hover {
+  background-color: rgba(148, 157, 161, 1); /* 滑過去時的顏色，這邊自己決定！ */
+}
