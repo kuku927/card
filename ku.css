@@ -42,15 +42,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  body {
-    background-image: url('pic/bg02.jpg');
-    /* 換成特別為手機準備的版本 */
-    background-position: center top;
-    /* 也可以微調位置 */
-  }
-}
-
 
 /* 套在 icon 區塊 */
 .text-center {
@@ -139,5 +130,11 @@ body {
   /* 讓圖片變成圓形 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* 加個陰影，看起來立體，可選 */
-  margin: 6px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
 }
