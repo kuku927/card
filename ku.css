@@ -44,7 +44,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url('pic/bg01-mobile.jpg');
+    background-image: url('pic/bg02.jpg');
     /* 換成特別為手機準備的版本 */
     background-position: center top;
     /* 也可以微調位置 */
